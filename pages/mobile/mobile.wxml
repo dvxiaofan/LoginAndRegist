@@ -1,2 +1,8 @@
 <!--pages/mobile/mobile.wxml-->
-<text>pages/mobile/mobile.wxml</text>
+<view class="content">
+	<view class="hr"></view>
+	<view class="numbg">
+		<view>+86</view>
+		<view><input placeholder="请输入手机号" maxlength="11" bindblur="mobileblur" /></view>
+	</view>
+</view>
