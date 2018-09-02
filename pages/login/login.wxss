@@ -1,0 +1,30 @@
+/* pages/login/login.wxss */
+.content {
+	margin-top: 40px;
+}
+
+.account {
+	display: flex;
+	flex-direction: row;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 90%;
+}
+
+.title {
+	margin-right: 30px;
+	font-weight: bold;
+}
+
+.hr {
+	border: 1px solid #ccc;
+	opacity: 0.2;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.see {
+	position: absolute;
+	right: 20px;
+}
