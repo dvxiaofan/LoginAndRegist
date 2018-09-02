@@ -13,4 +13,16 @@
 		</view>
 	</view>
 	<view class="hr"></view>
+
+	<button class="btn" disabled="{{true}}" type="default" bind:tap="login">登录</button>
+	<view class="operate">
+		<view><navigator url="../mobile/mobile">手机快速注册</navigator></view>
+		<view><navigator url="../company/company">企业用户注册</navigator></view>
+		<view>找回密码</view>
+	</view>
+	<view class="login">
+		<view><image src="../images/wxlogin.png" /></view>
+		<view><image src="../images/qqlogin.png" /></view>
+		
+	</view>
 </view>

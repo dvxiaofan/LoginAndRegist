@@ -28,3 +28,36 @@
 	position: absolute;
 	right: 20px;
 }
+
+.btn {
+	width: 90%;
+	margin-top: 40px;
+	color: #999;
+}
+
+.operate {
+	display: flex;
+	flex-direction: row;
+}
+
+.operate view {
+	margin: 0 auto;
+	margin-top: 40px;
+	font-size: 14px;
+	color: #333;
+}
+
+.login {
+	display: flex;
+	flex-direction: row;
+	margin-top: 150px;
+}
+
+.login view {
+	margin: 0 auto;
+}
+
+.login image {
+	width: 70px;
+	height: 98px;
+}
