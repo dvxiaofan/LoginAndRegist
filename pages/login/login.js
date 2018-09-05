@@ -9,7 +9,6 @@ Page({
 
   accountInput: function (event) {
     var content = event.detail.value.trim();
-    console.log(content);
     if (content !== '') {
       this.setData({
         disabled: false, 

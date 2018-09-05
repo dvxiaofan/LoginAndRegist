@@ -24,3 +24,25 @@
 	margin-left: 20px;
 	margin-top: 14px;
 }
+
+.xieyi {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.agree {
+	color: #666;
+	font-size: 13px;
+	margin-left: 5px;
+}
+
+.opinion {
+	font-size: 13px;
+	color: #000;
+	font-weight: bold;
+}
+
+.btn {
+	width: 90%;
+	margin-top: 30px;
+}
