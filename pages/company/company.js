@@ -1,66 +1,66 @@
 // pages/company/company.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    disabled: true,
+    btnstate: 'default',
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
+  accountblur:function (e) {
+    var content = e.detail.value.trim();
+    if (content != '') {
+      this.setData({
+        disabled: false,
+        btnstate: 'primary'
+      });
+    } else {
+      this.setData({
+        disabled: true,
+        btnstate: 'default'
+      });
+    }
   },
+/* 
+code
+:
+"6"
+company
+:
+"3"
+loginName
+:
+"1"
+mobile
+:
+"5"
+password
+:
+"2"
+switch
+:
+false
+userName
+: */
+  formSubmit: function(e) {
+    var user = new Object();
+    var value = e.detail.value;
+    user.account = value.loginName;
+    user.password = value.password;
+    user.company = value.company;
+    user.userName = value.userName;
+    user.code = value.code;
+    user.switch = value.switch;
+    user.mobile = value.mobile;
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+    wx.setStorageSync('user', user);
+    wx.showToast({
+      title: '注册成功',
+      icon: 'success',
+      duration: 1000,
+      success: function() {
+        wx.navigateTo({
+          url: '../login/login'
+        })
+      }
+    });
   }
 })

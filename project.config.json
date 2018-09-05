@@ -33,12 +33,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "手机注册",
-					"pathName": "pages/mobile/mobile"
+					"pathName": "pages/mobile/mobile",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "企业用户注册",
+					"pathName": "pages/company/company"
 				}
 			]
 		}
